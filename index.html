@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toledo Interiores — Análise de Conteúdo</title>
+<title>Toledo Interiores — Análise Estratégica de Conteúdo</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
@@ -549,6 +549,63 @@
   .mb-0 { margin-bottom: 0; }
   .gold { color: var(--gold); }
 
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .cover { padding: 60px 24px; min-height: 100svh; }
+    .cover h1 { font-size: 36px; }
+    .cover-sub { font-size: 11px; letter-spacing: 1px; }
+    .cover-meta { gap: 32px; flex-wrap: wrap; padding-top: 32px; }
+    .cover-meta-item .num { font-size: 28px; }
+
+    section { padding: 60px 24px; }
+    .metrics-section { padding: 60px 24px; }
+    .patterns-section { padding: 60px 24px; }
+    .ideias-section { padding: 60px 24px !important; }
+    .conclusao { padding: 60px 24px; }
+
+    h2 { font-size: 28px; }
+    h3 { font-size: 20px; }
+
+    /* Tabela de métricas — scroll horizontal */
+    .metrics-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .metrics-table { min-width: 580px; }
+    .metrics-table th, .metrics-table td { padding: 12px 10px; font-size: 12px; }
+    .curtidas-num { font-size: 15px; }
+    .bar { max-width: 40px; }
+
+    /* Grids — 1 coluna no mobile */
+    .videos-grid { grid-template-columns: 1fr; gap: 2px; }
+    .patterns-grid { grid-template-columns: 1fr; gap: 2px; }
+    .ideias-grid { grid-template-columns: 1fr; gap: 2px; }
+
+    /* Cards */
+    .video-card { padding: 24px 20px; }
+    .pattern-card { padding: 28px 24px; }
+    .ideia-card { padding: 28px 24px; }
+    .pattern-card .pc-num { font-size: 36px; }
+
+    /* Insights */
+    .insights-list li { padding: 20px 0; gap: 16px; }
+    .insights-list li h4 { font-size: 17px; }
+
+    /* Conclusão */
+    .conclusao-pillars { gap: 28px; }
+    .pillar { max-width: 130px; }
+
+    /* Cover meta responsivo */
+    .cover-meta { justify-content: center; }
+  }
+
+  @media (max-width: 480px) {
+    .cover h1 { font-size: 30px; }
+    .logo-text { font-size: 11px; letter-spacing: 4px; }
+    .cover-meta { gap: 20px; }
+    .cover-meta-item .num { font-size: 24px; }
+    .cover-meta-item .label { font-size: 9px; }
+    .conclusao-pillars { flex-direction: column; align-items: center; }
+    .pillar { max-width: 100%; text-align: center; }
+  }
+
   @media print {
     .cover { min-height: auto; padding: 60px; }
     section, .metrics-section, .patterns-section, .ideias-section, .conclusao { padding: 60px 40px; page-break-inside: avoid; }
@@ -562,8 +619,8 @@
 <div class="cover">
   <div class="cover-content">
     <div class="logo-text">toledo · interiores</div>
-    <h1>Análise de<br><em>Conteúdo Viral</em></h1>
-    <p class="cover-sub">12 reels · padrões · insights · direção estratégica</p>
+    <h1>Análise Estratégica<br><em>de Conteúdo</em></h1>
+    <p class="cover-sub">12 reels analisados · o que funcionou · o que ajustar · próximos passos</p>
     <div class="cover-meta">
       <div class="cover-meta-item">
         <span class="num">12</span>
@@ -584,10 +641,10 @@
 <!-- TABELA DE MÉTRICAS -->
 <div class="metrics-section">
   <div style="max-width:960px;margin:0 auto">
-    <span class="section-tag">01 — Métricas</span>
-    <h2>Desempenho dos<br>12 reels</h2>
+    <span class="section-tag">01 — Números</span>
+    <h2>Como cada reel<br>se saiu</h2>
 
-    <table class="metrics-table">
+    <div class="metrics-table-wrap"><table class="metrics-table">
       <thead>
         <tr>
           <th>#</th>
@@ -756,14 +813,14 @@
           <td>Montagem de apartamento</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 </div>
 
 <!-- ANÁLISE INDIVIDUAL -->
 <section>
-  <span class="section-tag">02 — Análise individual</span>
-  <h2>O que cada reel<br>está dizendo</h2>
+  <span class="section-tag">02 — Vídeo por vídeo</span>
+  <h2>O que cada reel<br>tem a ensinar</h2>
 
   <div class="videos-grid">
 
@@ -778,7 +835,7 @@
         <span class="vc-tag">30s</span>
         <span class="vc-tag">Sem narração</span>
       </div>
-      <p>Sem uma palavra falada, o vídeo entrega o produto no seu melhor. Imagens de alta qualidade, ritmo certo com a música. O caption é direto: "Transcenda o óbvio" — e encerra com CTA de WhatsApp. Funciona porque deixa o ambiente falar por si.</p>
+      <p>Sem falar nada, esse reel mostrou o produto e funcionou melhor do que vídeos com narração elaborada. Boas imagens, música no ritmo certo, legenda curta com contato. Simples assim. O ambiente vendeu sozinho.</p>
     </div>
 
     <div class="video-card top">
@@ -792,7 +849,7 @@
         <span class="vc-tag">22s</span>
         <span class="vc-tag">Sem narração</span>
       </div>
-      <p>O menor vídeo do conjunto, e o 2º maior. Prova que reel de produto individual bem executado pode superar tour de apartamento completo. Caption usa "charme e versatilidade" como âncora de posicionamento. Curto, preciso, eficaz.</p>
+      <p>O vídeo mais curto do lote e o segundo maior em curtidas. Um único produto filmado com capricho bateu reels de apartamentos inteiros. A lição é clara: você não precisa mostrar tudo. Escolha uma peça e mostre ela muito bem.</p>
     </div>
 
     <div class="video-card top">
@@ -807,7 +864,7 @@
         <span class="vc-tag">Pessoal</span>
       </div>
       <div class="transcript-box">"Eu não me tornei empresária porque eu quis. Eu me tornei empresária porque a vida me exigiu. Em 2006, meu pai e minha irmã faleceram num acidente de trânsito..."</div>
-      <p>O único conteúdo longo que performa de verdade. A regra é: conteúdo longo só funciona quando a âncora emocional é genuína e irresistível. Isabela entregou uma história de perda, reconstrução e propósito. Isso não é marketing — é humanidade.</p>
+      <p>O único vídeo longo que bombou de verdade. Por quê? Porque a história é real e difícil de ignorar. Isabela não estava vendendo móvel — estava contando quem ela é. Quando o conteúdo é assim, as pessoas ficam até o fim e ainda compartilham.</p>
     </div>
 
     <div class="video-card">
@@ -821,7 +878,7 @@
         <span class="vc-tag">Narração off</span>
       </div>
       <div class="transcript-box">"Hoje mostramos o resultado do apartamento de um jovem casal que valoriza a decoração, organização e o prazer de viver em uma casa sempre bem cuidada."</div>
-      <p>Roteiro sólido: abre apresentando quem é o cliente, descreve as escolhas com vocabulário técnico mas acessível, encerra com a tese da curadoria. Boa estrutura, bom resultado.</p>
+      <p>Funciona bem porque conta uma história com começo, meio e fim: quem é o casal, o que eles queriam, e como ficou. Quando o espectador consegue se identificar com os clientes, presta mais atenção no resultado.</p>
     </div>
 
     <div class="video-card">
@@ -834,7 +891,7 @@
         <span class="vc-tag">19s</span>
         <span class="vc-tag">Visual puro</span>
       </div>
-      <p>O mais curto dos visuais e ainda assim 3º lugar isolado entre os de menor duração. Confirma o padrão: quando o visual é forte, duração mínima é força, não fraqueza.</p>
+      <p>19 segundos e mais de 500 curtidas. Reforça o que os dados estão mostrando: quando as imagens são boas, vídeo curto não é problema — é vantagem. O seguidor assiste até o fim e o algoritmo nota isso.</p>
     </div>
 
     <div class="video-card">
@@ -847,7 +904,7 @@
         <span class="vc-tag">39s</span>
         <span class="vc-tag">Visual puro</span>
       </div>
-      <p>Composição de ambientes com música. Caption elegante que descreve o estilo sem vender diretamente. O produto se vende pelas imagens. Funciona.</p>
+      <p>Só imagens e música, sem narração. A legenda descreve o ambiente com calma, sem empurrar venda. Esse tom mais suave funciona bem para o público da Toledo, que aprecia elegância sem pressão.</p>
     </div>
 
     <div class="video-card">
@@ -861,7 +918,7 @@
         <span class="vc-tag">Narração off técnica</span>
       </div>
       <div class="transcript-box">"Eu resolvi optar pela nogueira aqui, porque eu achei interessante o contraste do frejó com a nogueira... a gente ficou bem na dúvida, porque eu não queria um móvel planejado."</div>
-      <p>Conteúdo educativo disfarçado de processo. Isabela fala sobre as escolhas de um projeto em primeira pessoa — isso humaniza e educa ao mesmo tempo. Formato com potencial inexplorado.</p>
+      <p>Isabela explicando por que escolheu um material e não outro, como se estivesse conversando com o cliente. Esse tipo de vídeo ensina algo e ainda mostra que a Toledo conhece o que faz. É um formato que pode ir muito além dos 365 curtidas que teve aqui.</p>
     </div>
 
     <div class="video-card">
@@ -875,7 +932,7 @@
         <span class="vc-tag">Entrevista</span>
       </div>
       <div class="transcript-box">"É uma sensação de conforto, de bem-estar, literalmente de encontrar a minha vida dentro de uma casa."</div>
-      <p>Frase bonita, resultado fraco. O problema não é o cliente — é o formato. Entrevista longa com câmera parada e perguntas previsíveis não prende no Instagram. O depoimento deveria ser extraído e condensado em 20-30 segundos no máximo.</p>
+      <p>O Henrique disse coisas incríveis. O problema foi o formato: entrevista longa com câmera parada não funciona no Instagram. As pessoas saem antes do fim. A solução não é parar de fazer depoimentos — é editar o melhor trecho em 20 segundos e construir o vídeo em torno disso.</p>
     </div>
 
     <div class="video-card">
@@ -889,7 +946,7 @@
         <span class="vc-tag">Narração off</span>
       </div>
       <div class="transcript-box">"Hoje viemos visitar um apartamento muito especial. Um projeto cheio de personalidade, conforto e escolhas feitas com intenção."</div>
-      <p>Abertura genérica, resultado abaixo do esperado. "Muito especial" e "cheio de personalidade" são frases que o mercado repete exaustivamente. Não diferencia.</p>
+      <p>A abertura "hoje viemos visitar um apartamento muito especial" é boa intenção, mas não segura ninguém. Quase todo perfil de decoração do Instagram fala isso. O que diferencia é um detalhe específico logo de cara — o tempo de projeto, a dificuldade vencida, a peça que mudou tudo.</p>
     </div>
 
     <div class="video-card">
@@ -903,7 +960,7 @@
         <span class="vc-tag">Narração off</span>
       </div>
       <div class="transcript-box">"O que faz da nossa casa um verdadeiro lar? O estilo, o conforto e a sensação de pertencimento."</div>
-      <p>Conceitual demais, específico de menos. A pergunta é boa, mas a resposta é genérica. Funciona como filosofia de marca, mas não ancora o espectador em algo concreto ou desejável.</p>
+      <p>A pergunta abre bem, mas a resposta vaga não entrega nada novo. "Estilo, conforto e pertencimento" são palavras que qualquer concorrente usaria. Para esse tipo de reflexão funcionar, precisa vir acompanhada de uma imagem ou história que faça o seguidor sentir, não só ler.</p>
     </div>
 
     <div class="video-card">
@@ -916,7 +973,7 @@
         <span class="vc-tag">38s</span>
         <span class="vc-tag">Visual puro</span>
       </div>
-      <p>Boas imagens, resultado abaixo do potencial visual. Pode indicar que o ambiente (varanda) atrai menos do que ambientes internos como salas e quartos. Ou que a edição não capturou bem o ambiente.</p>
+      <p>As imagens são boas, mas o resultado ficou abaixo do esperado para um vídeo visual. Uma hipótese: varanda pode atrair menos do que sala ou quarto no Instagram da Toledo. Vale testar outros ambientes e comparar. Também pode ser questão de música — o ritmo não casou com as imagens.</p>
     </div>
 
     <div class="video-card">
@@ -930,7 +987,7 @@
         <span class="vc-tag">Narração off</span>
       </div>
       <div class="transcript-box">"Há oito meses, esse apartamento começou a ganhar forma. Ainda no papel, nas conversas, nas escolhas feitas com calma."</div>
-      <p>Abertura forte — "há oito meses" cria contexto temporal imediato. Mas o ritmo cai no meio. A montagem deveria ser o clímax visual, mas o vídeo não chega lá com força suficiente.</p>
+      <p>Começou bem — "há oito meses" coloca o espectador dentro da história imediatamente. Mas o ritmo perdeu força no meio do caminho. A montagem do apartamento deveria ser o momento mais impactante do vídeo, e não chegou lá. Com uma edição mais agressiva e uma música mais forte, esse reel poderia dobrar o resultado.</p>
     </div>
 
   </div>
@@ -939,45 +996,45 @@
 <!-- PADRÕES -->
 <div class="patterns-section">
   <div style="max-width:960px;margin:0 auto">
-    <span class="section-tag">03 — Padrões identificados</span>
-    <h2>O que os dados<br>estão revelando</h2>
+    <span class="section-tag">03 — O que aprendemos</span>
+    <h2>Os padrões que<br>os dados mostram</h2>
 
     <div class="patterns-grid">
 
       <div class="pattern-card">
         <div class="pc-num">01</div>
         <h3>Visual puro domina</h3>
-        <p>Dos 5 vídeos com mais de 500 curtidas, <span class="highlight">4 são sem narração</span>. O conteúdo 100% visual — boas imagens, música certa, ritmo de edição — performa consistentemente melhor que narração. A Toledo já tem o produto. O que falta é deixá-lo falar mais.</p>
+      <p>Dos 5 vídeos que passaram de 500 curtidas, <span class="highlight">4 não têm nenhuma narração</span>. Só imagem e música. Isso não significa parar de falar — significa que quando as imagens são boas, elas convencem mais do que qualquer texto em off.</p>
       </div>
 
       <div class="pattern-card">
         <div class="pc-num">02</div>
         <h3>Curto vence — com exceções</h3>
-        <p>Os 3 melhores performers têm 30s, 22s e 19s. Conteúdo longo só supera essa regra quando tem uma âncora emocional irresistível — como a história da fundadora (2m38s, 657 curtidas). <span class="highlight">Duração não é problema. Força de âncora é.</span></p>
+      <p>Os 3 melhores vídeos têm 30, 22 e 19 segundos. Vídeo longo só funciona quando tem uma razão muito boa para existir — como a história da Isabela, que com 2 minutos e meio gerou 657 curtidas. <span class="highlight">O problema não é a duração. É não ter nada suficientemente forte para prender as pessoas.</span></p>
       </div>
 
       <div class="pattern-card">
         <div class="pc-num">03</div>
-        <h3>Isabela é o ativo oculto</h3>
-        <p>O único conteúdo com Isabela falando sobre si mesma triplicou a performance média dos reels de narração. <span class="highlight">O rosto e a história da fundadora têm um poder de conexão que nenhum ambiente consegue sozinho.</span> Está subutilizado.</p>
+        <h3>Isabela é o maior diferencial</h3>
+        <p>O único conteúdo com a Isabela falando sobre si mesma teve quase o triplo da média dos outros reels com narração. <span class="highlight">A fundadora aparecer e ser honesta sobre quem ela é gera mais conexão do que qualquer projeto fotografado.</span> Esse ativo ainda está sendo pouco usado.</p>
       </div>
 
       <div class="pattern-card">
         <div class="pc-num">04</div>
         <h3>Produto individual funciona</h3>
-        <p>O reel do carrinho bar (1.041 curtidas, 22s) prova que um único produto bem fotografado, com ritmo e música certa, supera tours completos de apartamento. <span class="highlight">Não precisa mostrar tudo. Precisa mostrar uma coisa muito bem.</span></p>
+        <p>O reel do carrinho bar — 22 segundos, um único produto — teve 1.041 curtidas. Mais do que tours inteiros de apartamentos. <span class="highlight">Você não precisa mostrar tudo. Precisa mostrar uma coisa com capricho e na hora certa.</span></p>
       </div>
 
       <div class="pattern-card">
         <div class="pc-num">05</div>
         <h3>Entrevista precisa ser repensada</h3>
-        <p>O formato de entrevista longa (cliente Henrique, 2m41s) gerou apenas 238 curtidas — menos que visuais de 19 segundos. <span class="highlight">Depoimento de cliente funciona. Entrevista longa com câmera parada, não.</span> A solução é extrair as melhores falas em cortes rápidos.</p>
+        <p>A entrevista longa com o cliente Henrique — 2 minutos e 41 segundos — gerou menos curtidas do que vídeos de 19 segundos sem narração. <span class="highlight">O problema não foi o cliente. Foi o formato. Câmera parada por mais de 2 minutos faz as pessoas saírem.</span> A solução é pegar a melhor frase e construir 20 segundos em cima dela.</p>
       </div>
 
       <div class="pattern-card">
         <div class="pc-num">06</div>
-        <h3>Copy genérica dilui resultado</h3>
-        <p>"Muito especial", "cheio de personalidade", "ambientes marcantes" são frases que todo concorrente usa. Os vídeos com essas aberturas ficam na média ou abaixo. <span class="highlight">Especificidade vende mais do que elegância vaga.</span> Troque "muito especial" por "8 meses de projeto condensados em 30 segundos."</p>
+        <h3>Frases genéricas afastam quem poderia se interessar</h3>
+        <p>"Muito especial", "cheio de personalidade", "ambientes marcantes" — todo perfil de decoração fala isso. Os vídeos com essas aberturas ficaram na média ou abaixo. <span class="highlight">Detalhes concretos conectam mais do que palavras bonitas.</span> Trocar "um apartamento muito especial" por "esse projeto levou 8 meses e começou num guardanapo" muda tudo.</p>
       </div>
 
     </div>
@@ -986,22 +1043,22 @@
       <li>
         <div class="ic-icon"></div>
         <div>
-          <h4>CTA inconsistente nos top performers</h4>
-          <p>Os dois vídeos com mais de 1.000 curtidas têm WhatsApp no caption. Os vídeos de narração longas geralmente não têm CTA claro. Toda publicação deveria ter pelo menos uma forma de contato — não como pressão de venda, mas como facilidade de acesso.</p>
+          <h4>Os melhores têm contato. Os piores não.</h4>
+          <p>Os dois vídeos com mais de 1.000 curtidas têm o número de WhatsApp na legenda. A maioria dos outros não tem. Não precisa ser agressivo — só facilitar o próximo passo. Quem gostou do vídeo e não encontra contato facilmente, some.</p>
         </div>
       </li>
       <li>
         <div class="ic-icon"></div>
         <div>
-          <h4>Salas de estar são o ambiente mais rentável</h4>
-          <p>Os reels de maior performance mostram principalmente salas e composições de estar. Varanda teve desempenho abaixo. Quartos não aparecem na amostra. Isso pode ser uma hipótese para testar — ou pode confirmar que o público responde mais a ambientes de convívio.</p>
+          <h4>Sala performa mais que varanda</h4>
+          <p>Os reels com melhores resultados mostram salas e composições de estar. A varanda ficou abaixo. Quartos não aparecem na amostra. Uma hipótese: o público da Toledo se imagina mais na sala do que em outros cômodos. Vale testar mais conteúdo de sala e quarto para confirmar.</p>
         </div>
       </li>
       <li>
         <div class="ic-icon"></div>
         <div>
-          <h4>Nenhum conteúdo educativo real</h4>
-          <p>O mais próximo foi o vídeo das decisões de acabamento (nogueira x frejó). É o único que educa de verdade — e gerou 365 curtidas acima da média dos reels de narração. Há um espaço não explorado de conteúdo que ensina algo ao espectador.</p>
+          <h4>Nenhum vídeo que realmente ensina algo</h4>
+          <p>O mais próximo foi o vídeo das decisões de acabamento — nogueira ou frejó — que gerou 365 curtidas acima da média. É o único que dá ao seguidor algo útil para levar. Existe um espaço grande aqui: conteúdo que educa o cliente antes de ele entrar na loja.</p>
         </div>
       </li>
     </ul>
@@ -1011,9 +1068,9 @@
 <!-- IDEIAS DE CONTEÚDO -->
 <section class="ideias-section" style="max-width:100%;padding:80px 40px;background:var(--cream-dark)">
   <div style="max-width:960px;margin:0 auto">
-    <span class="section-tag">04 — Direção estratégica</span>
-    <h2>8 ideias de conteúdo<br>baseadas nos dados</h2>
-    <p>Cada ideia é derivada diretamente dos padrões identificados. Não são sugestões genéricas — são hipóteses de conteúdo com base no que já funcionou.</p>
+    <span class="section-tag">04 — Próximos passos</span>
+    <h2>8 ideias de conteúdo<br>para testar agora</h2>
+    <p>Cada ideia vem direto dos padrões que os dados mostraram. Não é chute — é o que os próprios reels da Toledo ensinaram sobre o que funciona com o público dela.</p>
 
     <div class="ideias-grid">
 
@@ -1120,10 +1177,10 @@
 <!-- CONCLUSÃO -->
 <div class="conclusao">
   <div style="max-width:700px;margin:0 auto">
-    <span class="section-tag">05 — Direção</span>
-    <h2>O que a Toledo<br><em>deve fazer agora</em></h2>
-    <p>A Toledo Interiores já tem o produto, o showroom, os projetos e — o mais raro — uma fundadora com uma história genuína para contar. O que falta não é conteúdo. É clareza sobre o que funciona e coragem para ser mais específica, mais visual e mais pessoal.</p>
-    <p>O mercado de decoração no Instagram está cheio de "ambientes especiais" e "curadoria com propósito". A diferença entre 95 e 1.096 curtidas está em uma escolha simples: mostrar ou falar sobre.</p>
+    <span class="section-tag">05 — Conclusão</span>
+    <h2>O que a Toledo<br><em>já tem e pode usar</em></h2>
+    <p>A Toledo tem produto, showroom, projetos e — o que é mais difícil de construir — uma fundadora com uma história real para contar. O que falta não é conteúdo. É clareza sobre o que já funciona e coragem para ir mais fundo nisso.</p>
+    <p>O Instagram de decoração está cheio de perfis parecidos com "ambientes especiais" e "curadoria com propósito". A diferença entre 95 e 1.096 curtidas está numa escolha simples: mostrar de verdade ou ficar na superfície.</p>
 
     <div class="conclusao-pillars">
       <div class="pillar">
